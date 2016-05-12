@@ -2,6 +2,7 @@ package co.com.barberudem.model;
 
 import java.io.Serializable;
 
+
 public class LugarDTO implements Serializable {
 
   /**
@@ -151,6 +152,35 @@ public class LugarDTO implements Serializable {
    */
   public void setEmail(String email) {
     this.email = email;
+  }
+
+  /**
+   * Constructor
+   * @param address
+   * @param description
+   * @param email
+   * @param id
+   * @param Lat
+   * @param Lng
+   * @param name
+   * @param phone
+   * @param schedule
+   */
+  public LugarDTO(String address, String description, String email, Integer id, Long Lat, Long Lng,
+      String name, String phone, String schedule) {
+    this.address = address;
+    this.description = description;
+    this.email = email;
+    this.id = id;
+    this.lat = lat;
+    this.lng = lng;
+    this.name = name;
+    this.phone = phone;
+    this.schedule = schedule;
+  }
+  
+  public LugarDTO() {
+    super();
   }
 
 }

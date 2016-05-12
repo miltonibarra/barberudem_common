@@ -15,4 +15,10 @@ public interface LugarDAO {
    * @return Lugar {@link Lugar}
    */
   public LugarDTO findLugarByID(int lugarId);
+  
+  /**
+   * Obtiene todos los lugares
+   * @return
+   */
+  public LugarDTO findLugares();
 }
